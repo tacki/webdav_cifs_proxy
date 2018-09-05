@@ -2,7 +2,7 @@ FROM alpine
 MAINTAINER tacki@posteo.de
 
 RUN apk add --no-cache \
-    bash apache2 apache2-webdav apache2-utils cifs-utils multitail
+    bash apache2 apache2-webdav apache2-utils cifs-utils
 
 RUN mkdir -p /var/lib/dav \
     && mkdir -p /run/apache2 \
