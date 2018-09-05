@@ -14,6 +14,6 @@ ADD dav.conf /etc/apache2/conf.d/
 ADD run.sh /
 RUN chmod 750 /run.sh
 
-EXPOSE 80 443
+EXPOSE 80
 
 CMD ["/run.sh"]
