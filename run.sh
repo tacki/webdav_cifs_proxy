@@ -5,8 +5,8 @@ mkdir -p /run/apache2 \
 mkdir -p /var/webdav \
 chown apache:apache /var/lib/dav \
 chmod 755 /var/lib/dav
-ln -s /var/log/apache2/access.log /dev/stdout
-ln -s /var/log/apache2/error.log /dev/stderr
+ln -s /dev/stdout /var/log/apache2/access.log
+ln -s /dev/stderr /var/log/apache2/error.log
 
 htpasswd -cb /etc/apache2/webdav.password $USERNAME $PASSWORD
 chown root:apache /etc/apache2/webdav.password
